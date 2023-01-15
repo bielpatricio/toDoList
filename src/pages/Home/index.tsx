@@ -56,6 +56,7 @@ export function Home() {
               return state.filter((task) => task.id !== id)
             })
             setTaskNumber((state) => state - 1)
+            setTaskCompleted((state) => state - 1)
             Alert.alert('Deletado!')
           },
         },
